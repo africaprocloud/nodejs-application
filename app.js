@@ -17,13 +17,13 @@ console.log(__dirname);
 res.send("<h2>Welcome to Node JS express app</h2>"+appEnv.url+appEnv.port+port+process.env.LOGNAME);
 
 }).listen(9009);
-console.log(__dirname+"/images/mylandmarklogo.png");
+console.log(__dirname+"/images/soalvisetechlogo.png");
 */
-app.get('/landmarktechnologies', function(request, response) {
-    //response.send("<h2><center>Welcome to Node JS app develpoed by MyLandmarkTech</h2>");
+app.get('/SolaviseTech', function(request, response) {
+    //response.send("<h5><center>Welcome to Node JS app develpoed by SolaviseTech</h5>");
     response.write("<h2><center><u>Node JS  Application </u></center></h2>");
 	
-    response.write("<h2><center>Welcome to  Landmark Technologies. Please Contact +14372152483 for more information or send an email to info@mylandmarktech.com <center></h2>" );
+    response.write("<h4><center>Welcome to  SolaviseTech. Please Contact +1 (703) 647 3886 for more information or send an email to info@solavisetech.com <center></h4>" );
     response.end();
     
   })
@@ -33,7 +33,7 @@ app.get('/landmarktechnologies', function(request, response) {
 app.get("/html", function(req,res){
     res.set("Content-Type","text/html");
     //res.contentType("html") ; 
-    res.write("<h2>Welcome</h2>");
+    res.write("<h5>Welcome to SolaviseTech</h5>");
     res.write("<h2>/html call</h2>");
     //must end 
     res.end();
@@ -44,10 +44,10 @@ app.get("/html", function(req,res){
         //res.type('application/json');
         //res.json({'name': 'S. Legah'});
         res.send({
-		'name': 'Landmark Technologies',
+		'name': 'solavisetech',
 		'technology': 'DevOps',
-		'contact' : '+14372152483',
-		'email': 'info@mylandmarktech.com'
+		'contact' : '+1 (703) 647 3886',
+		'email': 'info@solavisetech.com'
 	            });
         
         });
@@ -70,12 +70,12 @@ app.get("/status-code-500", function(req, res) {
 
 app.get('/redirect', function(req, res) {
     //Send status 300
-        res.redirect('http://mylandmarktech.com');
+        res.redirect('http://https://solavisetech.com/');
     });
     
  
     app.listen(app.get('port'), function() {
-        console.log("Node JS app is running at http://localhost:" + app.get('port') +"/landmarktechnologies");
+        console.log("Node JS app is running at http://localhost:" + app.get('port') +"/solavisetech");
       })
     
 
