@@ -70,7 +70,7 @@ app.get("/status-code-500", function(req, res) {
 
 app.get('/redirect', function(req, res) {
     //Send status 300
-        res.redirect('http://https://solavisetech.com/');
+        res.redirect('https://solavisetech.com');
     });
     
  
