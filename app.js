@@ -17,13 +17,13 @@ console.log(__dirname);
 res.send("<h2>Welcome to Node JS express app</h2>"+appEnv.url+appEnv.port+port+process.env.LOGNAME);
 
 }).listen(9009);
-console.log(__dirname+"/images/soalvisetechlogo.png");
+console.log(__dirname+"/images/africaprocloudlogo.png");
 */
 app.get('/SolaviseTech', function(request, response) {
-    //response.send("<h2><center>Welcome to Node JS app develpoed by SolaviseTech</h2>");
+    //response.send("<h2><center>Welcome to Node JS app developed by africaprocloud</h2>");
     response.write("<h2><center><u>Node JS  Application </u></center></h2>");
 	
-    response.write("<h2><center>Welcome to  SolaviseTech. Please Contact +1 (703) 647 3886 for more information or send an email to info@solavisetech.com <center></h2>" );
+    response.write("<h2><center>Welcome to  africaprocloud. Please Contact +1 (612) 478-9350 for more information or send an email to africaprocloudinstitute@gmail.com <center></h2>" );
     response.end();
     
   })
@@ -33,7 +33,7 @@ app.get('/SolaviseTech', function(request, response) {
 app.get("/html", function(req,res){
     res.set("Content-Type","text/html");
     //res.contentType("html") ; 
-    res.write("<h2><center><u>Welcome to SolaviseTech</u></center></h2>");
+    res.write("<h2><center><u>Welcome to africaprocloud</u></center></h2>");
     res.write("<h2><center><u>/html call</u></center></h2>");
     //must end 
     res.end();
@@ -44,10 +44,10 @@ app.get("/html", function(req,res){
         //res.type('application/json');
         //res.json({'name': 'S. Legah'});
         res.send({
-		'name': 'solavisetech',
+		'name': 'africaprocloud',
 		'technology': 'DevOps',
-		'contact' : '+1 (703) 647 3886',
-		'email': 'info@solavisetech.com'
+		'contact' : '+1 (612) 478-9350',
+		'email': 'africaprocloudinstitute@gmail.com'
 	            });
         
         });
@@ -75,7 +75,7 @@ app.get('/redirect', function(req, res) {
     
  
     app.listen(app.get('port'), function() {
-        console.log("Node JS app is running at http://localhost:" + app.get('port') +"/solavisetech");
+        console.log("Node JS app is running at http://localhost:" + app.get('port') +"/africaprocloud");
       })
     
 
