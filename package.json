@@ -26,13 +26,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/LandmakTechnology/nodejs-application"
+    "url": "https://github.com/africaprocloud/nodejs-application"
   },
   "keywords": [
     "node",
-    "Landmark Technologies",
+    "Africa Procloud Institute",
     "express"
   ],
-  "author": "Simon Legah",
-  "license": "MyLandmarkTech"
+  "author": "Atanga N Emmanuel",
+  "license": "Africa-Procloud-Institute"
 }
