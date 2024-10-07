@@ -2,7 +2,7 @@
 
 To start this application first you can get this repo code using below url
 
-git clone https://github.com/AtangaEmma/nodejs-application
+git clone https://github.com/africaprocloud/nodejs-application
 
 cd nodejs-app-mss
 
